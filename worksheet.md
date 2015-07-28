@@ -1,46 +1,46 @@
 # Getting Started with Minecraft Pi
 
-Minecraft is a popular sandbox open-world building game. A free version of Minecraft is available for the Raspberry Pi; it also comes with a programming interface. This means you can write commands and scripts in Python code to build things in the game automatically. It's a great way to learn Python!
+Minecraft est un jeu populaire de type "bac à sable" en construction libre de mondes. Une version gratuite de Minecraft est disponible pour le Raspberry Pi; il est aussi fourni avec une interface de programmation. Ca veut dire que vous pouvez écrire de commandes et de scripts en code Python pour construire des choses automatiquement dans le jeu. C'est un moyen génial pour apprendre le langage Python !
 
-![Minecraft Pi banner](images/minecraft-pi-banner.png)
+![bannière Minecraft Pi](images/minecraft-pi-banner.png)
 
-## Run Minecraft
+## Lancer Minecraft
 
-To run Minecraft, double click the desktop icon or enter `minecraft-pi` in the terminal.
+Pour lancer Minecraft, cliquez deux fois sur l'icône du bureau ou entrez `minecraft-pi` dans le terminal.
 
 ![](images/mcpi-start.png)
 
-When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+Une fois Minecraft Pi chargé, cliquez sur **Start Game**, puis sur **Create new**. Vous remarquez que la fenêtre conteneur est légèrement décalée. Ca veut dire que pour déplacer la fenêtre à l'écran vous devez attraper la barre de titre derrière la fenêtre Minecraft.
 
 ![](images/mcpi-game.png)
 
-You are now in a game of Minecraft! Go walk around, hack things, and build things!
+Vous êtes maintenant dans un jeu de Minecraft! Allez-y, marchez, creusez des choses, et construisez des choses !
 
-Use the mouse to look around and use the following keys on the keyboard:
+Utilisez la souris pour regarder autour de vous et utilisez les touches suivantes du clavier :
 
-| Key          | Action               |
-| :---:        | :-----:              |
-| W            | Forward              |
-| A            | Left                 |
-| S            | Backward             |
-| D            | Right                |
-| E            | Inventory            |
-| Space        | Jump                 |
-| Double Space | Fly / Fall           |
-| Esc          | Pause / Game menu    |
-| Tab          | Release mouse cursor |
+| Touche       | Action                 |
+| :---:        | :-----:                |
+| W            | Avancer                |
+| A            | Gauche                 |
+| S            | Reculer                |
+| D            | Droit                  |
+| E            | Inventaire             |
+| Espace       | Sauter                 |
+| Double Espace| Voler / Tomber         |
+| Echap        | Pause / Menu du Jeu    |
+| Tab          | Libérer curseur du jeu |
 
-You can select an item from the quick draw panel with the mouse's scroll wheel (or use the numbers on your keyboard), or press `E` and select something from the inventory.
+Vous pouvez selectionner un article du panneau d'accès rapide avec la molette de la souris (ou utilisez les chiffres de votre clavier), ou appuyer sur `E` et selectionner autre chose de l'inventaire.
 
 ![](images/mcpi-inventory.png)
 
-You can also double tap the space bar to fly into the air. You'll stop flying when you release the space bar, and if you double tap it again you'll fall back to the ground.
+Vous pouvez aussi taper deux fois sur la barre d'espace pour s'envoler dans l'air. Vous arretez de voler en lachant la barre d'espace, et si vous la tapez deux fois encore vous retombez à terre.
 
 ![](images/mcpi-flying.png)
 
-With the sword in your hand, you can click on blocks in front of you to remove them (or to dig). With a block in your hand, you can use right click to place that block in front of you, or left click to remove a block.
+Avec l'épée à la main, vous pouvez cliquez sur les blocs devant vous pour les enlever (ou pour creuser). Avec un bloc à la main, vous pouvez utiliser un clic droit pour placer le bloc devant vous, ou un clic gauche pour enlever un bloc.
 
-## Use the Python programming interface
+## Utilisation de l'interface de programmation Python
 
 With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) from the application menu or from the Desktop and move the windows so they're side-by-side.
 
