@@ -27,7 +27,7 @@ Utilisez la souris pour regarder autour de vous et utilisez les touches suivante
 | E            | Inventaire             |
 | Espace       | Sauter                 |
 | Double Espace| Voler / Tomber         |
-| Echap        | Pause / Menu du Jeu    |
+| Echap        | Pause / Menu du jeu    |
 | Tab          | Libérer curseur du jeu |
 
 Vous pouvez selectionner un article du panneau d'accès rapide avec la molette de la souris (ou utilisez les chiffres de votre clavier), ou appuyer sur `E` et selectionner autre chose de l'inventaire.
