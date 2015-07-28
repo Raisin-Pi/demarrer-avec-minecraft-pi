@@ -1,7 +1,7 @@
-By following this resource with your Raspberry Pi you will learn:
+En déroulant cette ressource avec votre Raspberry Pi vous allez apprendre :
 
-- How to access Minecraft Pi and create a new world
-- How to use the Python programming environment IDLE to connect to Minecraft Pi
-- How to use the Minecraft Python API to post text to the chat window, find the player's coordinates, teleport and build structures
-- How to use variables to store IDs for different types of blocks
-- Experimenting with placing different types of blocks with special attributes
+- Comment accéder à Mincraft Pi et créer un nouveau monde
+- Comment utiliser l'environnement de programmation Python, IDLE, pour se connecter à Minecraft Pi
+- Comment se servir de l'API Minecraft Python pour poster du texte dans le fenêtre tchat, trouver la position du joueur, téléporter et constuire des structures
+- Comment utiliser des variables pour stocker des IDs pour des types de blocs différents
+- A expérimenter l'emplacement de types de blocs différents avec des attributs spéciaux

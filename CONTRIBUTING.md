@@ -1,27 +1,27 @@
-# Contributing
+# Contribuer
 
-All contributions are assumed to be licensed under the same licence as the source, i.e. [CC BY-SA](http://creativecommons.org/licenses/by-sa/4.0/). This licence must remain in all derivatives of this work.
+Toute contribution sera considérée comme licencié sous la même licence que la source, i.e. CC BY-SA. Cette licence doit rester dans tout travail dérivé de cet oeuvre.
 
-## Issues
+## Problèmes
 
-If you find a mistake, bug or other problem, please [open an issue](https://github.com/raspberrypilearning/minecraft-pi/issues) in this repository.
+Si vous trouver une erreur, bug ou autre problème, veuillez [ouvrir un ticket "issue"](https://github.com/Raisin-Pi/minecraft-pi/issues) dans ce répertoire.
 
-## Pull Requests
+## Demandes "pull"
 
-If you fix a mistake, bug or problem or have something to contribute, please create a pull request for each modification. Please consider grouping modifications sensibly, i.e. don't bundle typo fixes in the same pull request as code changes, instead file them separately.
+Si vous corrigez une erreur, un bug ou un problème ou vous avez quelque chose à contribuer, veuillez créer une demande "pull" pour chaque modification. Merci de refléchir au regroupement intelligent des modifications, par exemple ne pas mettre ensemble des corrections de fautes d'orthographe en même temps que des changements de code, plutot les soumettre séparément.
 
-Please note that sometimes things are done for pedagogical reasons so changes which make sense from a software engineering perspective (reducing duplication or making use of more advanced programming language features) may not be suitable to maintain the intended educational value.
+Merci de comprendre que certaines choses sont parfois faites dans un but pédagogique donc des changements qui semblent logique d'un point de vue génie logiciel (réduction de redondance ou l'utilisation des fonctionnalités évoluées d'un langage de programmation) ne serait pas adapté  pour maintenir la valeur éducative souhaitée.
 
-## Derivatives
+## Travail Dérivé
 
-The licence must remain in all derivatives of this work.
+La licence doit rester dans tout travail dérivé de cet oeuvre.
 
 ## Licence
 
-Unless otherwise specified, everything in this repository is covered by the following licence:
+Sauf si expressément spécifié, tout le contenu de ce répertoire est couvert sous la licence suivante :
 
-[![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+![Licence Creative Commons](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-***Minecraft Pi*** by the [Raspberry Pi Foundation](http://www.raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
+***Minecraft Pi*** de la [Fondation Raspberry Pi](http://raspberrypi.org) est licencié sous  [Licence Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Based on a work at https://github.com/raspberrypilearning/getting-started-with-minecraft-pi
+D'après le travail réalisé sous https://github.com/raspberrypilearning/getting-started-with-minecraft-pi

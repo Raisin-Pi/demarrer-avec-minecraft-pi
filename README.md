@@ -1,33 +1,33 @@
-# Getting Started with Programming the Minecraft World
+# Démarrer avec la Programmation du Monde de Minecraft
 
 ![](cover.png)
 
-Minecraft is a popular sandbox open world-building game. A free version of Minecraft is available for the Raspberry Pi; it also comes with a programming interface. This means you can write commands and scripts in Python code to build things in the game automatically. It's a great way to learn Python!
+Minecraft est un jeu populaire de type "bac à sable" en construction libre de mondes. Une version gratuite de Minecraft est disponible pour le Raspberry Pi; il est aussi fourni avec une interface de programmation. Ca veut dire que vous pouvez écrire de commandes et de scripts en code Python pour construire des choses automatiquement dans le jeu. C'est un moyen génial pour apprendre le langage Python !
 
-![Minecraft Pi banner](images/minecraft-pi-banner.png)
+![bannière Minecraft Pi](images/minecraft-pi-banner.png)
 
-## Requirements
+## Prérequis
 
-### Hardware
+### Matériel
 
-This resource requires no additional hardware besides a Raspberry Pi with a Raspbian SD card.
+Cette ressource ne nécessite aucun autre matériel à part un Raspberry Pi avec une carte SD Raspbian.
 
-### Software
+### Application
 
-Minecraft has been installed by default in Raspbian since September 2014.
+Minecraft est installé par défaut dans Raspbian depuis Septembre 2014.
 
-If you do not have it installed, or you need to test it works, see the [software installation](software.md) page.
+Si ce n'est pas installé pour vous, ou si vous avez besoin de tester pour vérfier si ça marche, voir la page [installation de l'application](software.md).
 
-## The worksheet
+## Feuille d'activités
 
-- [The worksheet](worksheet.md)
+- [La feuille d'activités](worksheet.md)
 
 ## Licence
 
-Unless otherwise specified, everything in this repository is covered by the following licence:
+Sauf si expressément spécifié, tout le contenu de ce répertoire est couvert sous la licence suivante :
 
-[![Creative Commons License](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+![Licence Creative Commons](http://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
-***Minecraft Pi*** by the [Raspberry Pi Foundation](http://www.raspberrypi.org) is licenced under a [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
+***Minecraft Pi*** de la [Fondation Raspberry Pi](http://raspberrypi.org) est licencié sous  [Licence Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Based on a work at https://github.com/raspberrypilearning/getting-started-with-minecraft-pi
+D'après le travail réalisé sous https://github.com/raspberrypilearning/getting-started-with-minecraft-pi

@@ -1,39 +1,39 @@
-# Software installation
+# Installation de l'application
 
-Minecraft has been installed by default in Raspbian since September 2014.
+Minecraft est installé par défaut dans Raspbian depuis Septembre 2014.
 
-![Minecraft Pi desktop icon](images/minecraft-pi-shortcut.png)
+![icône de bureau Minecraft Pi](images/minecraft-pi-shortcut.png)
 
-If you're using an older version of Raspbian, open a terminal window and type the following commands (you must be online):
+Si vous utilisez une version antérieure de Raspbian, ouvrir une fenêtre de terminal et taper les commandes suivantes (vous devez être connecté à internet) :
 
 ```bash
 sudo apt-get update
 sudo apt-get install minecraft-pi
 ```
 
-Once that finishes, Minecraft Pi and the Python library should be installed.
+Une fois terminé, Minecraft Pi ainsi que la bibliothèque Python devraient être installés.
 
-## Test Minecraft
+## Tester Minecraft
 
-To run Minecraft double click the desktop icon or enter `minecraft-pi` in the terminal.
+Pour lancer Minecraft, cliquez deux fois sur l'icône du bureau ou entrez `minecraft-pi` dans le terminal.
 
 ![](images/mcpi-start.png)
 
-When Minecraft Pi has loaded, click on **Start Game**, followed by **Create new**. You'll notice that the containing window is offset slightly. This means to drag the window around you have to grab the title bar behind the Minecraft window.
+Une fois Minecraft Pi chargé, cliquez sur **Start Game**, puis sur **Create new**. Vous remarquez que la fenêtre conteneur est légèrement décalée. Ca veut dire que pour déplacer la fenêtre à l'écran vous devez attraper la barre de titre derrière la fenêtre Minecraft.
 
 ![](images/mcpi-game.png)
 
-You are now in a game of Minecraft!
+Vous êtes désormais dans un jeu de Minecraft !
 
-## Test Python
+## Tester Python
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) on the Desktop and move the windows so they're side-by-side.
+Avec Minecraft en cours d'exécution, et le monde crée, sortir du jeu en appuyant sur la touche `Tab`, ce qui va liberer votre souris de la fenêtre du jeu. Ouvrir IDLE (pas IDLE3) sur le Bureau et déplacer les deux fenêtres pour qu'elles soient côte à côte.
 
-You can either type commands directly in to the Python window or create a file so you can save your code and run it again another time.
+Vous pouvez soit taper vos commandes directement dans la fenêtre Python soit créer un fichier pour pouvoir enregistrer votre code et l'exécuter de nouveau le moment venu.
 
-If you want create a file go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+Si vous souhaitez créer un fichier, passez par `File > New window` and `File > Save`. Probablement vous devrez enregistrer ce fichier dans votre répertoire racine ou un nouveau dossier projet.
 
-Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
+Commencez par l'importation de la bibliothèque Minecraft, en créeant une connexion avec le jeu et en le testant avec l'envoi d'un message "Hello world" vers l'écran :
 
 ```python
 from mcpi import minecraft
@@ -43,8 +43,8 @@ mc = minecraft.Minecraft.create()
 mc.postToChat("Hello world")
 ```
 
-If you're entering commands directly in to the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+Si vous entres des commandes directement dans la fenêtre Python, il suffit de taper "Entrée" après chaque nouvelle ligne. Si c'est un fichier, enregistrez-le avec `Ctrl + S` et lancer avec `F5`. Quand votre code est exécuté, vous devez apercevoir votre message à l'écran dans le jeu.
 
 ![](images/mcpi-idle.png)
 
-If you see "Hello world" in the Minecraft window, you're good to proceed to the [worksheet](worksheet.md).
+Si vous voyez "Hello world" dans la fenêtre Minecraft, vous pouvez enchaîner avec [la feuille d'activités](worksheet.md).

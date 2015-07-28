@@ -1,3 +1,3 @@
-In this resource you will explore the virtual world of Minecraft Pi, the special edition of Minecraft made for Raspberry Pi.
+Dans cette ressource vous allez explorer le monde virtuel de Minecraft Pi, l'édition spéciale de Minecraft crée pour le Raspberry Pi.
 
-You will learn how to control the player, manually build with blocks and use the Python interface to manipulate the world around you.
+Vous allez apprendre comment contrôler votre personnage, construire manuellement avec des blocs et utiliser l'interface Python afin de pouvoir manipuler le monde autour de vous.
