@@ -42,13 +42,13 @@ Avec l'épée à la main, vous pouvez cliquez sur les blocs devant vous pour les
 
 ## Utilisation de l'interface de programmation Python
 
-With Minecraft running, and the world created, bring your focus away from the game by pressing the `Tab` key, which will free your mouse. Open IDLE (not IDLE3) from the application menu or from the Desktop and move the windows so they're side-by-side.
+Avec Minecraft en cours d'exécution, et le monde crée, sortir du jeu en appuyant sur la touche `Tab`, ce qui va liberer votre souris de la fenêtre du jeu. Ouvrir IDLE (pas IDLE3) sur le Bureau et déplacer les deux fenêtres pour qu'elles soient côte à côte.
 
-You can either type commands directly into the Python window or create a file so you can save your code and run it again another time.
+Vous pouvez soit taper vos commandes directement dans la fenêtre Python soit créer un fichier pour pouvoir enregistrer votre code et l'exécuter de nouveau le moment venu.
 
-If you want create a file, go to `File > New window` and `File > Save`. You'll probably want to save this in your home folder or a new project folder.
+Si vous souhaitez créer un fichier, passez par `File > New window` and `File > Save`. Probablement vous devrez enregistrer ce fichier dans votre répertoire racine ou un nouveau dossier projet.
 
-Start by importing the Minecraft library, creating a connection to the game and testing it by posting the message "Hello world" to the screen:
+Commencez par l'importation de la bibliothèque Minecraft, en créeant une connexion avec le jeu et en le testant avec l'envoi d'un message "Hello world" vers l'écran :
 
 ```python
 from mcpi import minecraft
@@ -58,31 +58,31 @@ mc = minecraft.Minecraft.create()
 mc.postToChat("Hello world")
 ```
 
-If you're entering commands directly into the Python window, just hit `Enter` after each line. If it's a file, save with `Ctrl + S` and run with `F5`. When your code runs, you should see your message on screen in the game.
+Si vous entres des commandes directement dans la fenêtre Python, il suffit de taper "Entrée" après chaque nouvelle ligne. Si c'est un fichier, enregistrez-le avec `Ctrl + S` et lancer avec `F5`. Quand votre code est exécuté, vous devez apercevoir votre message à l'écran dans le jeu.
 
 ![](images/mcpi-idle.png)
 
-### Find your location
+### Trouver votre position
 
-To find your location, type:
+Pour trouver votre position, taper :
 
 ```python
 pos = mc.player.getPos()
 ```
 
-`pos` now contains your location; access each part of the set of coordinates with `pos.x`, `pos.y` and `pos.z`.
+`pos` contient désormais votre emplacement; accéder à chaque élément dans l'ensemble des coordonnées avec `pos.x`, `pos.y` et `pos.z`.
 
-Alternatively, a nice way to get the coordinates into separate variables is to use Python's unpacking technique:
+Autrement, une façon sympa de mettre les coordonnées dans des variables séparés est d'utiliser la technique de déballage dans Python :
 
 ```python
 x, y, z = mc.player.getPos()
 ```
 
-Now `x`, `y`, and `z` contain each part of your position coordinates. `x` and `z` are the walking directions (forward/back and left/right) and `y` is up/down.
+Maintenant `x`, `y`, et `z` contiennent chaque partie des coordonnées de votre position. `x` et `z` sont les directions de marche (avancer/reculer et gauche/droit) et `y` est haut/bas.
 
-Note that `getPos()` returns the location of the player at the time, and if you move position you have to call the function again or use the stored location.
+A noter que `getPos()` retourne l'emplacement du joueur à un temps donné, et si vous bouger de cet emplacement vous êtes obligé d'appeler la fonction de nouveau ou utiliser les valeurs de position déjà stockées.
 
-### Teleport
+### Téléportation
 
 As well as finding out your current location you can specify a particular location to teleport to.
 
