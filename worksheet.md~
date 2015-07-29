@@ -118,19 +118,19 @@ Herbe: 2
 Terre:  3
 ```
 
-Maintenant avec le bloc en pleine vue, essayez de le changer en autre chose :
+Now with the block in sight, try changing it to something else:
 
 ```python
 mc.setBlock(x+1, y, z, 2)
 ```
 
-Vous devrez voir le bloc gris de pierre se transformer devant vos yeux !
+You should see the grey stone block change in front of your eyes!
 
 ![](images/mcpi-setblock2.png)
 
-#### Des blocs comme des variables
+#### Blocks as variables
 
-Vous pouvez utiliser un variable pour stocker un ID afin de rendre le code plus lisible. Les IDs sont récupérés via `block`:
+You can use a variable to store an ID to make the code more readable. The IDs are retrievable through `block`:
 
 ```python
 from mcpi import block
@@ -139,16 +139,16 @@ dirt = block.DIRT.id
 mc.setBlock(x, y, z, dirt)
 ```
 
-Sinon si vous connaissez déjà l'ID, vous pouvez juste le paramétrer directement :
+Or if you know the ID, you can just set it directly:
 
 ```python
 dirt = 3
 mc.setBlock(x, y, z, dirt)
 ```
 
-### Des blocs spéciaux
+### Special blocks
 
-Certains blocs posedent des paramètres supplémentaires, comme la laine qui a un paramètre supplémentaire pour spécifier la couleur. Pour la configurer, utilisez la quatrième valeur facultative dans `setBlock`:
+There are some blocks which have extra properties, such as Wool which has an extra setting you can specify the colour. To set this use the optional fourth parameter in `setBlock`:
 
 ```python
 wool = 35
