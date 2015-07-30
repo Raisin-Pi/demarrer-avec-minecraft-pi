@@ -104,7 +104,7 @@ x, y, z = mc.player.getPos()
 mc.setBlock(x+1, y, z, 1)
 ```
 
-Maintenant un bloc de pierre devrait apparaître à coté de là où vous êtes. Si ce n'est pas directement devant vous ça peut être juste à coté ou derrière vous. Revenez dans la fenêtre Minecraft et utilisez la souris pour tourner sur place jusqu'au point où vous trouvez le bloc gris devant vous. 
+Maintenant un bloc de pierre devrait apparaître à coté de là où vous êtes. Si ce n'est pas directement devant vous ça peut être juste à coté ou derrière vous. Revenez dans la fenêtre Minecraft et utilisez la souris pour tourner sur place jusqu'au point où vous trouvez le bloc gris devant vous.
 
 ![](images/mcpi-setblock.png)
 
@@ -155,21 +155,21 @@ wool = 35
 mc.setBlock(x, y, z, wool, 1)
 ```
 
-Here the fourth parameter `1` sets the wool colour to orange. Without the fourth parameter it is set to the default (`0`) which is white. Some more colours are:
+Ici le quatrième paramètre `1` modifie la couleur de la leine en orange. Sans ce quatrième paramètre, la valeur reste par défaut (`0`) ce qui est blanc. Quelques couleurs disponibles sont :
 
 ```
 2: Magenta
-3: Light Blue
-4: Yellow
+3: Bleu clair
+4: Jaune
 ```
 
-Try some more numbers and watch the block change!
+Essayez d'autres numéros et regardez comme le bloc change !
 
-Other blocks which have extra properties are wood (`17`): oak, spruce, birch, etc; tall grass (`31`): shrub, grass, fern; torch (`50`): pointing east, west, north, south; and more. See the [API reference](http://www.stuffaboutcode.com/p/minecraft-api-reference.html) for full details.
+D'autres blocs qui ont des propriétés supplémentaires sont le bois (`17`): chène(oak), épicéa(spruce), bouleau(birch), etc; l'herbe haute (`31`): arbustre(shrub), herbe(grass), fougère(fern); flambeau (`50`): direction est, ouest, nord, sud; et autre. Voir la [référence API](http://www.stuffaboutcode.com/p/minecraft-api-reference.html) en anglais pour tous les détails.
 
-### Set multiple blocks
+### Fixer de multiples blocs
 
-As well as setting a single block with `setBlock` you can fill in a volume of space in one go with `setBlocks`:
+En plus de fixer un bloc unique avec `setBlock` vous pouvez remplir un volume dans l'espace tout en même temps avec `setBlocks` :
 
 ```python
 stone = 1
@@ -177,17 +177,17 @@ x, y, z = mc.player.getPos()
 mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, stone)
 ```
 
-This will fill in a 10 x 10 x 10 cube of solid stone.
+Un cube de 10 x 10 x 10 de pierre solide sera rempli.
 
 ![](images/mcpi-setblocks.png)
 
-You can create bigger volumes with the `setBlocks` function but it may take longer to generate!
+Vous pouvez créer de plus grands volumes avec la fonction `setBlocks` mais ça risque de prendre plus longtemps.
 
-## Dropping blocks as you walk
+## Faire tomber des blocs en marchant
 
-Now you know how to drop blocks, let's use our moving location to drop blocks when you walk.
+Maintenant que vous savez faire tomber des blocs, nous allons s'en servir pour faire tomber des blocs pendant que vous vous déplacez.
 
-The following code will drop a flower behind you wherever you walk:
+Le code suivant fera tomber une fleur derrière vous là où vous marchez :
 
 ```python
 from mcpi import minecraft
@@ -203,17 +203,17 @@ while True:
     sleep(0.1)
 ```
 
-Now walk forward for a while and turn around to see the flowers you have left behind you.
+Maintenant avancez une certaine distance et retournez-vous pour voir les fleurs que vous avez laissé derrière vous.
 
 ![](images/mcpi-flowers.png)
 
-Since we used a `while True` loop this will go on forever. To stop it, hit `Ctrl + C` in the Python window.
+Puisque nous avons utilisé une boucle `while True` ça va continuer à l'infini. Pour l'arreter, tapez `Ctrl + C` dans la fenêtre Python.
 
-Try flying through the air and see the flowers you leave in the sky:
+Essayez de voler dans l'air et voir les fleurs que vous laissez dans le ciel :
 
 ![](images/mcpi-flowers-sky.png)
 
-What if we only wanted to drop flowers when the player walks on grass? We can use `getBlock` to find out what type a block is:
+Et si on voulait simplement faire tomber des fleurs quand le joueur marche sur l'herbe ? Nous pouvons utiliser `getBlock` pour trouver quel type de bloc c'est :
 
 ```python
 x, y, z = mc.player.getPos()  # player position (x, y, z)
@@ -221,7 +221,7 @@ this_block = mc.getBlock(x, y, z)  # block ID
 print(this_block)
 ```
 
-This tells you the location of the block you're standing *in* (this will be `0` - an air block). We want to know what type of block we're standing *on*. For this we subtract 1 from the `y` value and use `getBlock()` to determine what type of block we're standing on:
+Ceci vous informe de la position du bloc *dans* lequel vous vous trouvez (ça sera `0` - un bloc d'air). Nous aimerions connaître le type de bloc *sur* lequel nous nous situons. Pour cela, nous devons soustraire 1 de la valeur de `y` et nous utilisons `getBlock()` afin de déterminer sur quel type de bloc on se trouve :
 
 ```python
 x, y, z = mc.player.getpos()  # player position (x, y, z)
@@ -229,9 +229,9 @@ block_beneath = mc.getBlock(x, y-1, z)  # block ID
 print(block_beneath)
 ```
 
-This tells us the ID of the block the player is standing on.
+Ceci nous retourne l'ID du bloc sous les pieds du personnage.
 
-Test this out by running a loop to print the block ID of whatever you're currently standing on:
+Testez en lançant une boucle qui imprime l'ID du bloc de votre position actuelle :
 
 ```python
 while True:
@@ -242,7 +242,7 @@ while True:
 
 ![](images/mcpi-block-test.png)
 
-We can use an `if` statement to choose whether or not we plant a flower:
+Nous pouvons utiliser une déclaration `if` pour choisir si on va planter une fleur ou pas :
 
 ```python
 grass = 2
@@ -257,7 +257,7 @@ while True:
     sleep(0.1)
 ```
 
-Perhaps next we could turn the tile we're standing on into grass if it isn't grass already:
+Peut-être nous pouvons ensuite transformer le carreau sur lequel on est debout en herbe si ce n'est pas déjà de l'herbe :
 
 ```python
 if block_beneath == grass:
@@ -266,13 +266,13 @@ else:
     mc.setBlock(x, y-1, z, grass)
 ```
 
-Now we can walk forward and if we walk on grass, we'll leave a flower behind. If the next block is not grass, it turns into grass. When we turn around and walk back, we now leave a flower behind us.
+Maintenant nous pouvons avancer et si nous marchons sur l'herbe on va laisser une fleur derrière nous. Si le prochain bloc n'est pas de l'herbe, ça se transforme en herbe. Quand nous faisons demi-tour et marchons dans l'autre sens nous laissons une fleur derrière nous.
 
 ![](images/mcpi-flowers-grass.png)
 
-## Playing with TNT blocks
+## Jouer avec des blocs de TNT
 
-Another interesting block is TNT! To place a normal TNT block use:
+Un autre bloc intéressant est le TNT ! Pour placer un bloc normal de TNT, utilisez :
 
 ```python
 tnt = 46
@@ -281,16 +281,16 @@ mc.setBlock(x, y, z, tnt)
 
 ![](images/mcpi-tnt.png)
 
-However, this TNT block is fairly boring. Try applying `data` as `1`:
+Toutefois, ce bloc de TNT est assez anodin. Essayez d'appliquer la propriété `data` comme `1`:
 
 ```python
 tnt = 46
 mc.setBlock(x, y, z, tnt, 1)
 ```
 
-Now use your sword and left click the TNT block: it will be activated and will explode in a matter of seconds!
+Maintenant utilisez votre épée et faites clic droit sur le bloc de TNT : il sera activé et explosera au bout de quelques secondes !
 
-Now try making a big cube of TNT blocks!
+Maintenant essayez de crée un cube géant de blocs de TNT !
 
 ```python
 tnt = 46
@@ -299,22 +299,22 @@ mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, tnt, 1)
 
 ![](images/mcpi-tnt-blocks.png)
 
-Now you'll see a big cube full of TNT blocks. Go and activate one of the blocks and then run away to watch the show! It'll be really slow to render the graphics as so many things are changing at once.
+Alors vous allez voir un grand cube plein de blocs de TNT. Allez activer un des blocs et retirez vous vite pour regarder le spectacle ! Ca sera très lent pour rendre les grapiques car tant de choses sont en train de changer en même temps.
 
 ![](images/mcpi-tnt-explode.png)
 
-## What next?
+## Et puis ?
 
-There's plenty you can do now you know your way around the Minecraft world and how to use the Python interface.
+Il y a énormément de choses que vous pouvez faire maintenant que vous maitrisez le monde de Minecraft et comment se servir de l'interface Python.
 
-### Networked game
+### Jeu en réseau
 
-If multiple people connect Raspberry Pis to a local network, they can join the same Minecraft world and play together. Players can see each other in the Minecraft world.
+Si de multiples personnes connectent leurs Raspberry Pi sur un réseau local, ils peuvent se joindre au même monde Minecraft et jouer ensemble. Les joeurs peuvent se voir dans le monde de Minecraft.
 
-### API reference
+### Référence API
 
-For a more extensive documentation of functions and a full list of block IDs see an API reference at [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
+Pour de la documentation plus approfondie au niveau des fonction et une liste complète des ID des blocs, regardez une référence de l'API à [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).
 
-### Make a game
+### Créer un jeu
 
-Try out another resource and make a Whac-a-mole game: [Minecraft Whac-a-Block](https://www.raspberrypi.org/learning/minecraft-whac-a-block-game/).
+Essayez une autre ressource et créer un jeu de Tape une Taupe : [Minecraft Whac-a-Block](https://www.raspberrypi.org/learning/minecraft-whac-a-block-game/).
