@@ -1,4 +1,4 @@
-# Getting Started with Minecraft Pi
+# Démarrer avec Minecraft Pi
 
 Minecraft est un jeu populaire de type "bac à sable" en construction libre de mondes. Une version gratuite de Minecraft est disponible pour le Raspberry Pi; il est aussi fourni avec une interface de programmation. Ca veut dire que vous pouvez écrire de commandes et de scripts en code Python pour construire des choses automatiquement dans le jeu. C'est un moyen génial pour apprendre le langage Python !
 
