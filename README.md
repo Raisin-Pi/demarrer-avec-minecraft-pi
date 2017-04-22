@@ -1,4 +1,4 @@
-# Démarrer avec la Programmation du Monde de Minecraft
+# Démarrer la Programmation dans le Monde de Minecraft
 
 ![](cover.png)
 
